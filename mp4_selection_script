@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# This script is designed to allow the user to select an mp4 file via dmenu and then play it with mpv
+# Be sure that both dmenu and mpv are installed
+
+    du -a /media/thickpad/Backup_Mint_X220T/Movies_and_Tv/ | cut -f2- | grep mp4$ | dmenu -p prompt -l 60 | xargs -I {} mpv "{}" 
