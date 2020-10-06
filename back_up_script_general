@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ -d /destination_of_back_up_drive ]; then # if the drive is connected and mounted then...
+	echo "Copying Data...
+	sudo cp -r ~/path_to_file_or_directory /destination_of_back_up_drive
+	echo "=) Back Up Completed (="
+else
+	echo "! Drive Not Found !"
+fi
