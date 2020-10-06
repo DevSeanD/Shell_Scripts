@@ -1,0 +1,10 @@
+#!/bin/bash
+
+while true
+do
+	temp_read="$(istats all | grep "CPU temp")"
+	echo -ne '\033[K'
+	echo -ne '\033[K'
+	echo -ne "$temp_read " '\r'
+	sleep 5
+done
